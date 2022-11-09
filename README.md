@@ -72,6 +72,8 @@ EPSI B3 Cours
 > fi 
 
 ## Exercice 2
-Créer un hook qui vous empêche de push. <br>
-Créer un hook qui vérifie le nom de la destination quand vous tentez de push. Si ce dernier ne contient pas votre nom, rejeté le push <br>
-Créer un hook qui vous dit bonjour à chaqu
+### Créer un hook qui vous empêche de push. <br>
+
+### Créer un hook qui vérifie le nom de la destination quand vous tentez de push. Si ce dernier ne contient pas votre nom, rejeté le push <br>
+
+### Créer un hook qui vous dit bonjour à chaque fois que vous updater votre projet
