@@ -2,7 +2,7 @@
 EPSI B3 Cours
 
 ## Exercice 1
-- Créer un hook qui vous empêche de commit quoi que ce soit : `pre-commit`  <br>
+### Créer un hook qui vous empêche de commit quoi que ce soit : `pre-commit`  <br>
 
 > #!/bin/sh
 >
@@ -17,7 +17,7 @@ EPSI B3 Cours
 > fi
 
 
-- Créer un hook qui vérifie que votre message de commit commence bien par Bonjour : `commit-msg`  <br>
+### Créer un hook qui vérifie que votre message de commit commence bien par Bonjour : `commit-msg`  <br>
 
 > #!/usr/bin/env bash
 > 
@@ -35,7 +35,7 @@ EPSI B3 Cours
 >   
 > fi
 
-- Créer un hook qui vérifie que le nombre de caractères dans votre message de commit est pair : `commit-msg` <br>
+### Créer un hook qui vérifie que le nombre de caractères dans votre message de commit est pair : `commit-msg` <br>
 
 (+ Add this line)
 
@@ -53,12 +53,23 @@ EPSI B3 Cours
 > fi
 
 
-- Créer un hook qui vérifie que votre message de commit commence bien au format “XXX-0000” ou les X sont des lettres et les 0 sont des chiffres : `commit-msg` <br>
+### Créer un hook qui vérifie que votre message de commit commence bien au format “XXX-0000” ou les X sont des lettres et les 0 sont des chiffres : `commit-msg` <br>
 
 (+ Add this line)
 
-> Code here
+> if [[ "$START_LINE" =~ $STR_DIGIT_PATTERN ]]; then
 > 
+> echo "It's good ! XXX-OOOO. (X is String, O is Number)"
+> 
+> exit 0
+> 
+> else
+> 
+> echo "Respect this regular expression : XXX-OOOO. (X is String, O is Number)"
+> 
+> exit 1
+>
+> fi 
 
 ## Exercice 2
 Créer un hook qui vous empêche de push. <br>
