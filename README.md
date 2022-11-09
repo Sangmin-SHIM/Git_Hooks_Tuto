@@ -2,7 +2,7 @@
 EPSI B3 Cours
 
 ## Exercice 1
-Créer un hook qui vous empêche de commit quoi que ce soit. - 'pre-commit'  <br>
+Créer un hook qui vous empêche de commit quoi que ce soit : 'pre-commit'  <br>
 Créer un hook qui vérifie que votre message de commit commence bien par Bonjour <br>
 Créer un hook qui vérifie que le nombre de caractères dans votre message de commit est pair. <br>
 Créer un hook qui vérifie que votre message de commit commence bien au format “XXX-0000” ou les X sont des lettres et les 0 sont des chiffres
