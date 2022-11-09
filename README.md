@@ -23,11 +23,11 @@ Créer un hook qui vérifie que votre message de commit commence bien par Bonjou
 > 
 > INPUT_FILE=$1
 > 
-> START_LINE=`main -n1 $INPUT_FILE`
+> START_LINE=`head -n1 $INPUT_FILE`
 > 
 > PATTERN="^Bonjour"
 > 
-> if ! [[ "$START_LINE" =~ $PATTERN ]]; then
+> if  [[ "$START_LINE" =~ $PATTERN ]]; then
 > 
 >   echo "Bad commit message, see example: Bonjour. [your commit messages]"
 >   
